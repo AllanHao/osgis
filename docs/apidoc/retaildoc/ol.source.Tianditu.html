@@ -119,6 +119,25 @@
             </ul>
         </li>
     
+        <li class="item" data-name="gaia.CustomerMap">
+            <span class="title">
+                <a href="gaia.CustomerMap.html">gaia.CustomerMap</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            </ul>
+            <ul class="fires itemMembers">
+            
+            </ul>
+        </li>
+    
         <li class="item" data-name="gaia.MapControl">
             <span class="title">
                 <a href="gaia.MapControl.html">gaia.MapControl</a>
@@ -942,6 +961,31 @@
             </ul>
         </li>
     
+        <li class="item" data-name="ol.render3D">
+            <span class="title">
+                <a href="ol.render3D.html">ol.render3D</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="ol.render3D#animate" class="">
+                    <a href="ol.render3D.html#animate">animate</a>
+                </li>
+            
+            </ul>
+            <ul class="fires itemMembers">
+            
+            </ul>
+        </li>
+    
         <li class="item" data-name="ol.source.AMap">
             <span class="title">
                 <a href="ol.source.AMap.html">ol.source.AMap</a>
@@ -1047,8 +1091,6 @@
     </h2>
     <br>
     
-    <pre class="prettyprint source"><code>import Tianditu from 'tianditu';</code></pre>
-    
     
         <div class="class-description"><p>天地图图层源。</p></div>
     
@@ -1063,20 +1105,6 @@
 <dt class="">
     <div class="nameContainer">
         
-        <div class="anchor" id="Tianditu">
-        </div>
-        <h4 class="name">
-            new ol.source.Tianditu<span class="signature">(opt_options)</span>
-            
-            
-
-        </h4>
-        
-        <div class="tag-source">
-            ol/source/tianditu.1.js, line 3
-        </div>
-        
-        
     </div>
     
 </dt>
@@ -1088,61 +1116,6 @@
 
     
 
-    
-    
-        
-
-<table class="params">
-    <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
-        <tr class="">
-            
-                <td class="name"><code>options</code></td>
-            
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">Object</span>
-
-
-            
-            </td>
-            
-            
-            
-            
-            <td  class="description last">
-                
-                <p>参数。
-       url - {string} 服务地址。<br>
-       attributions - {string} 版权描述信息。<br>
-       cacheSize - {number} 缓冲大小。<br>
-       tileLoadFunction - {function} 切片加载完成后执行函数。<br>
-       maxZoom - {Object} 最大缩放级别。<br>
-       opaque - {boolean} 是否透明。</p></td>
-        </tr>
-	
-	
-	</tbody>
-</table>
-    
     
 
     
@@ -1193,7 +1166,7 @@
         <h3 class="subsection-title">Extends</h3>
 
         <ul>
-            <li>ol.source.WMTS{@linkdoc-openlayers/ol.source.WMTS}</li>
+            <li>ol.source.WMTS</li>
         </ul>
     
 
@@ -1527,6 +1500,8 @@
     </h2>
     <br>
     
+    <pre class="prettyprint source"><code>import Tianditu from 'tianditu';</code></pre>
+    
     
         <div class="class-description"><p>天地图图层源。</p></div>
     
@@ -1541,6 +1516,20 @@
 <dt class="">
     <div class="nameContainer">
         
+        <div class="anchor" id="Tianditu">
+        </div>
+        <h4 class="name">
+            new ol.source.Tianditu<span class="signature">(opt_options)</span>
+            
+            
+
+        </h4>
+        
+        <div class="tag-source">
+            ol/source/tianditu.1.js, line 3
+        </div>
+        
+        
     </div>
     
 </dt>
@@ -1552,6 +1541,61 @@
 
     
 
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr class="">
+            
+                <td class="name"><code>options</code></td>
+            
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            <td  class="description last">
+                
+                <p>参数。
+       url - {string} 服务地址。<br>
+       attributions - {string} 版权描述信息。<br>
+       cacheSize - {number} 缓冲大小。<br>
+       tileLoadFunction - {function} 切片加载完成后执行函数。<br>
+       maxZoom - {Object} 最大缩放级别。<br>
+       opaque - {boolean} 是否透明。</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
     
 
     
@@ -1602,7 +1646,7 @@
         <h3 class="subsection-title">Extends</h3>
 
         <ul>
-            <li>ol.source.WMTS</li>
+            <li>ol.source.WMTS{@linkdoc-openlayers/ol.source.WMTS}</li>
         </ul>
     
 
