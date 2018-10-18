@@ -17,6 +17,14 @@ body {
   width: 100%;
   min-height: 100%;
 }
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 4px;
+}
 .fr {
   float: right;
 }
@@ -478,7 +486,8 @@ table td {
   /*padding-left: 10px;*/
 }
 .footer .copyright {
-  margin-left: 10px;
+text-align: center;
+/*  margin-left: 10px; */
 }
 @media screen and (max-width: 768px) {
   .fast-add {
