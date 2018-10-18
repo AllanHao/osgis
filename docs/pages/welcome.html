@@ -14,17 +14,60 @@
 </head>
 
 <body>
-	<div class="weadmin-body">
-
+	<div class="weadmin-body"> 
 		<div class="layui-col-lg12 layui-collapse" style="border: none;">
 			<div class="layui-col-lg6 layui-col-md12">
 				<fieldset class="layui-elem-field we-changelog" style="padding: 5px;">
-					<blockquote class="layui-elem-quote font16">首页介绍</blockquote>
+					<blockquote class="layui-elem-quote font16">介绍</blockquote>
 					<div class="layui-card-body layui-text weadmin-text">
-						<p>Layui发版以来一直受到不少猿的推崇，作为其中的小白，我也一直在推崇和学习中挣扎，WeAdmin无他，也只是小白实操的一个记录。</p>
-						<p>更多的疑难解答，建议移步查看<a href="http://www.layui.com/doc/" target="_blank">layui文档</a>或者进入<a href="http://fly.layui.com/"
-							 target="_blank">Fly社区</a>搜索。</p>
-						<p>更完善的商业使用，强烈建议移步<a href="http://www.layui.com/admin/" target="_blank">layuiAdmin</a></p>
+						<section>
+							<article class="readme">
+								<h1>OpenMap</h1>
+								<p>基于<a href="https://openlayers.org">OpenLayers</a>的前端地图解决方案，以自定义图层为基础单元，构造自定义地图。</p>
+								<p>API地址：<a href="https://openmap.osgis.cn">https://openmap.osgis.cn</a></p>
+								<h2>主要类介绍</h2>
+								<ul>
+									<li>
+										<p>gaia.MapManager</p>
+										<p>地图管理类，主要负责创建，查找，移除 gaia.MapControl对象</p>
+									</li>
+									<li>
+										<p>gaia.MapControl</p>
+										<p>自定义地图控件类，拥有属性ol.Map对象，拥有各个自定义图层gaia.Layer对象</p>
+									</li>
+									<li>
+										<p>gaia.Layer</p>
+										<p>自定义图层基类</p>
+									</li>
+									<li>
+										<p>gaia.MapWinForm</p>
+										<p>地图窗体类，通过html和css构造地图窗体，拥有属性gaia.MapControl对象</p>
+									</li>
+									<li>
+										<p>gaia.CustomerMap</p>
+										<p>自定义客户端地图类，继承gaia.MapWinForm类，负责实现自定义图层加载逻辑，存在于入口js中</p>
+									</li>
+								</ul>
+								<h2>主要类关系说明</h2>
+								<p><img src="https://allanhao.com/images/openmapDoc/openmap_UML.png" alt="" style="width:100%"></p>
+								<ol>
+									<li>
+										<p>gaia.MapManager与gaia.MapControl
+											类似依赖关系，由gaia.MapManager管理gaia.MapControl,及新增，查找，移除gaia.MapControl对象</p>
+									</li>
+									<li>
+										<p>gaia.MapControl关联gaia.Layer和ol.Map,拥有属性gaia.Layer对象和ol.Map对象</p>
+										<p>gaia.layer.Tianditu以及gaia.layer.Store等等自定义图层继承gaia.layer.Layer</p>
+									</li>
+									<li>
+										<p>gaia.MapWinForm关联gaia.MapControl，拥有属性gaia.MapControl对象</p>
+									</li>
+									<li>
+										<p>gaia.CustomerMap继承gaia.MapWinForm,负责实现自定义图层加载逻辑</p>
+									</li>
+								</ol>
+							</article>
+						</section>
 					</div>
 				</fieldset>
 			</div>
