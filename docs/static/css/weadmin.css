@@ -489,14 +489,6 @@ table td {
 text-align: center;
 /*  margin-left: 10px; */
 }
-.footer .copyright a{
-  color: #F8F8F8;
-  text-decoration:underline
-}
-.footer .copyright a:hover{
-  color: #c2c2c2;
-  text-decoration:underline
-}
 @media screen and (max-width: 768px) {
   .fast-add {
     display: none;
