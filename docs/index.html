@@ -25,9 +25,15 @@
 				<i title="展开左侧栏" class="iconfont">&#xe699;</i>
 			</div>  -->
     <ul class="layui-nav right" lay-filter="">
-      <li class="layui-nav-item"><a href="/apidoc/oldoc">OpenLayers</a></li>
-      <li class="layui-nav-item"><a href="/apidoc/omdoc">OpenMap</a></li>
-      <li class="layui-nav-item"><a href="/apidoc/retaildoc">Retail</a></li>
+      <li class="layui-nav-item">
+        <a href="javascript:void(0);" onclick="topage('https://openlayers.org')">OpenLayers</a>
+      </li>
+      <li class="layui-nav-item">
+        <a href="javascript:void(0);" onclick="topage('https://openmap.osgis.cn')">OpenMap</a>
+      </li>
+      <li class="layui-nav-item">
+        <a href="/apidoc/retaildoc">Retail</a>
+      </li>
     </ul>
 
   </div>
@@ -35,124 +41,9 @@
   <!-- 中部开始 -->
 
   <body>
-    <div class="weadmin-body">
-      <div class="layui-col-lg12 layui-collapse" style="border: none;padding-bottom: 42px">
-        <div class="layui-col-lg6 layui-col-md12">
-          <fieldset class="layui-elem-field we-changelog" style="padding: 5px;">
-            <blockquote class="layui-elem-quote font16">介绍</blockquote>
-            <div class="layui-card-body layui-text weadmin-text">
-              <section>
-                <article class="readme">
-                  <h1 style="padding-bottom:10px">OpenMap</h1>
-                  <p>基于<a href="https://openlayers.org">OpenLayers</a>的前端地图解决方案，以自定义图层为基础单元，构造自定义地图。</p>
-                  <p>API地址：<a href="https://openmap.osgis.cn">https://openmap.osgis.cn</a></p>
-                  <h2>主要类介绍</h2>
-                  <ul>
-                    <li>
-                      <p>gaia.MapManager</p>
-                      <p>地图管理类，主要负责创建，查找，移除 gaia.MapControl对象</p>
-                    </li>
-                    <li>
-                      <p>gaia.MapControl</p>
-                      <p>自定义地图控件类，拥有属性ol.Map对象，拥有各个自定义图层gaia.Layer对象</p>
-                    </li>
-                    <li>
-                      <p>gaia.Layer</p>
-                      <p>自定义图层基类</p>
-                    </li>
-                    <li>
-                      <p>gaia.MapWinForm</p>
-                      <p>地图窗体类，通过html和css构造地图窗体，拥有属性gaia.MapControl对象</p>
-                    </li>
-                    <li>
-                      <p>gaia.CustomerMap</p>
-                      <p>自定义客户端地图类，继承gaia.MapWinForm类，负责实现自定义图层加载逻辑，存在于入口js中</p>
-                    </li>
-                  </ul>
-                  <h2>主要类关系说明</h2>
-                  <p><img src="https://allanhao.com/images/openmapDoc/openmap_UML.png" alt="" style="width:100%"></p>
-                  <ol>
-                    <li>
-                      <p>gaia.MapManager与gaia.MapControl
-                        类似依赖关系，由gaia.MapManager管理gaia.MapControl,及新增，查找，移除gaia.MapControl对象</p>
-                    </li>
-                    <li>
-                      <p>gaia.MapControl关联gaia.Layer和ol.Map,拥有属性gaia.Layer对象和ol.Map对象</p>
-                      <p>gaia.layer.Tianditu以及gaia.layer.Store等等自定义图层继承gaia.layer.Layer</p>
-                    </li>
-                    <li>
-                      <p>gaia.MapWinForm关联gaia.MapControl，拥有属性gaia.MapControl对象</p>
-                    </li>
-                    <li>
-                      <p>gaia.CustomerMap继承gaia.MapWinForm,负责实现自定义图层加载逻辑</p>
-                    </li>
-                  </ol>
-                </article>
-              </section>
-            </div>
-          </fieldset>
-        </div>
-        <div class="layui-col-lg6 layui-col-md12">
-          <fieldset class="layui-elem-field we-changelog" style="padding: 5px;">
-            <!--更新日志-->
-            <blockquote class="layui-elem-quote font16">发展历程&amp;更新日志</blockquote>
-            <ul class="layui-timeline">
-              <li class="layui-timeline-item">
-                <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
-                <div class="layui-timeline-content layui-text">
-                  <div class="layui-timeline-title">
-                    <h3>OpenMap-Retail上线</h3>
-                    <span class="layui-badge-rim">2018-10-18</span>
-                  </div>
-                  <p>
-                    经过前前后后一个多月的版本剥离，重建分支，Retail适配，OpenMap-Retail版本上线。
-                    <br>至此，开发思路为master版本为通用分支，方便快速构建前端地图，每个项目地图新建一个分支。
-                  </p>
-                </div>
-              </li>
-              <li class="layui-timeline-item">
-                <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
-                <div class="layui-timeline-content layui-text">
-                  <div class="layui-timeline-title">
-                    <h3>OpenMap-Web尝试上线</h3>
-                    <span class="layui-badge-rim">2018-10-17</span>
-                  </div>
-                  <p>
-                    既然想做一个东西，总要正式一些，所以尝试上线了“官方网站”。
-                  </p>
-                </div>
-              </li>
-              <li class="layui-timeline-item">
-                <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
-                <div class="layui-timeline-content layui-text">
-                  <div class="layui-timeline-title">
-                    <h3>OpenMap V0.1.0 Beta</h3>
-                    <span class="layui-badge-rim">2018-01-01</span>
-                  </div>
-                  <ul>
-                    <li>OpenMap初步成型，使用ES6标准，应用Webpack进行打包分发。</li>
-                    <li>基于OpenLayers封装，通过自定义图层的方式，实现自定义地图功能。</li>
-                  </ul>
-                </div>
-              </li>
-              <li class="layui-timeline-item">
-                <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
-                <div class="layui-timeline-content layui-text">
-                  <div class="layui-timeline-title">
-                    <h3>OpenMap立项</h3>
-                    <span class="layui-badge-rim">2018-01-01</span>
-                  </div>
-                  <p>
-                    OpenMap基于OpenLayers，在实际项目开发中逐渐抽象演变而来。
-                  </p>
-                </div>
-              </li>
-            </ul>
-          </fieldset>
-        </div>
-      </div>
+    <iframe id="mainiframe" src="./pages/welcome.html">
 
-    </div>
+    </iframe>
   </body>
   <!-- 中部结束 -->
   <!-- 底部开始 -->
@@ -162,10 +53,22 @@
   <!-- 底部结束 -->
   <script type="text/javascript">
     layui.config({
-      base: '/static/js/'
+      base: './static/js/'
       , version: '101100'
     }).use('admin');
+    function topage(src) {
+      var ifm = document.getElementById("mainiframe");
+      ifm.src = src;
+    }
+    window.onload = function () {
+      function changeFrameHeight() {
+        var ifm = document.getElementById("mainiframe");
+        ifm.style.height = document.documentElement.clientHeight - 55 + 'px';
+      }
+      changeFrameHeight();
+      window.onresize = function () { changeFrameHeight(); }
 
+    }
   </script>
 </body>
 <!--Tab菜单右键弹出菜单-->
