@@ -16,18 +16,18 @@
 </head>
 <body>
 
-<div class="navbar navbar-inverse navbar-fixed-top">
+<!--<div class="navbar navbar-inverse navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container">
-      <a class="brand" href="/"><img src="logo-70x70.png"> Retail Map</a> 
-        <ul class='nav navbar-nav pull-right'>
+      <a class="brand" href="/"><img src="logo-70x70.png"> GAIA Map</a> 
+         <ul class='nav navbar-nav pull-right'>
             <li><a href='/apidoc/oldoc'>Openlayers</a></li>
             <li><a href='/apidoc/omdoc'>OpenMap</a></li> 
-            <li><a href='/apidoc/retaildoc'>RetailMap</a></li>
+            <li><a href='/apidoc/retaildoc'>Retail</a></li>
         </ul>
     </div>
   </div>
-</div>
+</div>-->
 
 <div id="wrap" class="clearfix">
     
@@ -70,6 +70,8 @@
                 <li data-name="gaia.Constant.analysisStartTime"><a href="gaia.Constant.html#.analysisStartTime">analysisStartTime</a></li>
             
                 <li data-name="gaia.Constant.analysisUrl"><a href="gaia.Constant.html#.analysisUrl">analysisUrl</a></li>
+            
+                <li data-name="gaia.Constant.deviceType"><a href="gaia.Constant.html#.deviceType">deviceType</a></li>
             
                 <li data-name="gaia.Constant.featureInvalidInterval"><a href="gaia.Constant.html#.featureInvalidInterval">featureInvalidInterval</a></li>
             
@@ -353,6 +355,16 @@
             </ul>
             <ul class="methods itemMembers">
             
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="gaia.Observable#on" class="">
+                    <a href="gaia.Observable.html#on">on</a>
+                </li>
+            
+                <li data-name="gaia.Observable#un" class="">
+                    <a href="gaia.Observable.html#un">un</a>
+                </li>
+            
             </ul>
             <ul class="fires itemMembers">
             
@@ -621,6 +633,14 @@
                     <a href="gaia.layer.AMap.html#dispose">dispose</a>
                 </li>
             
+                <li data-name="gaia.layer.AMap#on" class="">
+                    <a href="gaia.layer.AMap.html#on">on</a>
+                </li>
+            
+                <li data-name="gaia.layer.AMap#un" class="">
+                    <a href="gaia.layer.AMap.html#un">un</a>
+                </li>
+            
             </ul>
             <ul class="fires itemMembers">
             
@@ -652,6 +672,14 @@
             
                 <li data-name="gaia.layer.Layer#dispose" class="">
                     <a href="gaia.layer.Layer.html#dispose">dispose</a>
+                </li>
+            
+                <li data-name="gaia.layer.Layer#on" class="">
+                    <a href="gaia.layer.Layer.html#on">on</a>
+                </li>
+            
+                <li data-name="gaia.layer.Layer#un" class="">
+                    <a href="gaia.layer.Layer.html#un">un</a>
                 </li>
             
             </ul>
@@ -695,6 +723,14 @@
             
                 <li data-name="gaia.layer.Measure#enableMeasure" class="">
                     <a href="gaia.layer.Measure.html#enableMeasure">enableMeasure</a>
+                </li>
+            
+                <li data-name="gaia.layer.Measure#on" class="">
+                    <a href="gaia.layer.Measure.html#on">on</a>
+                </li>
+            
+                <li data-name="gaia.layer.Measure#un" class="">
+                    <a href="gaia.layer.Measure.html#un">un</a>
                 </li>
             
             </ul>
@@ -744,6 +780,14 @@
                     <a href="gaia.layer.OSM.html#dispose">dispose</a>
                 </li>
             
+                <li data-name="gaia.layer.OSM#on" class="">
+                    <a href="gaia.layer.OSM.html#on">on</a>
+                </li>
+            
+                <li data-name="gaia.layer.OSM#un" class="">
+                    <a href="gaia.layer.OSM.html#un">un</a>
+                </li>
+            
             </ul>
             <ul class="fires itemMembers">
             
@@ -777,6 +821,14 @@
                     <a href="gaia.layer.Search.html#dispose">dispose</a>
                 </li>
             
+                <li data-name="gaia.layer.Search#on" class="">
+                    <a href="gaia.layer.Search.html#on">on</a>
+                </li>
+            
+                <li data-name="gaia.layer.Search#un" class="">
+                    <a href="gaia.layer.Search.html#un">un</a>
+                </li>
+            
             </ul>
             <ul class="fires itemMembers">
             
@@ -790,16 +842,8 @@
                     <a href="gaia.events.Event.html#event:select">select</a>
                 </li>
             
-                <li data-name="event:select" class="">
-                    select
-                </li>
-            
                 <li data-name="gaia.events.Event#event:unselect" class="">
                     <a href="gaia.events.Event.html#event:unselect">unselect</a>
-                </li>
-            
-                <li data-name="event:unselect" class="">
-                    unselect
                 </li>
             
             </ul>
@@ -828,8 +872,44 @@
             
             <span class="subtitle">Methods</span>
             
+                <li data-name="gaia.layer.Store#afterSelected" class="">
+                    <a href="gaia.layer.Store.html#afterSelected">afterSelected</a>
+                </li>
+            
+                <li data-name="gaia.layer.Store#afterUnselected" class="">
+                    <a href="gaia.layer.Store.html#afterUnselected">afterUnselected</a>
+                </li>
+            
                 <li data-name="gaia.layer.Store#dispose" class="">
                     <a href="gaia.layer.Store.html#dispose">dispose</a>
+                </li>
+            
+                <li data-name="gaia.layer.Store#loadFeatures" class="">
+                    <a href="gaia.layer.Store.html#loadFeatures">loadFeatures</a>
+                </li>
+            
+                <li data-name="gaia.layer.Store#on" class="">
+                    <a href="gaia.layer.Store.html#on">on</a>
+                </li>
+            
+                <li data-name="gaia.layer.Store#search" class="">
+                    <a href="gaia.layer.Store.html#search">search</a>
+                </li>
+            
+                <li data-name="gaia.layer.Store#setSelected" class="">
+                    <a href="gaia.layer.Store.html#setSelected">setSelected</a>
+                </li>
+            
+                <li data-name="gaia.layer.Store#setUnselected" class="">
+                    <a href="gaia.layer.Store.html#setUnselected">setUnselected</a>
+                </li>
+            
+                <li data-name="gaia.layer.Store#un" class="">
+                    <a href="gaia.layer.Store.html#un">un</a>
+                </li>
+            
+                <li data-name="gaia.layer.Store#updateFeatures" class="">
+                    <a href="gaia.layer.Store.html#updateFeatures">updateFeatures</a>
                 </li>
             
             </ul>
@@ -837,12 +917,16 @@
             
             <span class="subtitle">Fires</span>
             
-                <li data-name="event:select" class="">
-                    select
+                <li data-name="gaia.events.Event#event:postlayer" class="">
+                    <a href="gaia.events.Event.html#event:postlayer">postlayer</a>
                 </li>
             
-                <li data-name="event:unselect" class="">
-                    unselect
+                <li data-name="gaia.events.Event#event:select" class="">
+                    <a href="gaia.events.Event.html#event:select">select</a>
+                </li>
+            
+                <li data-name="gaia.events.Event#event:unselect" class="">
+                    <a href="gaia.events.Event.html#event:unselect">unselect</a>
                 </li>
             
             </ul>
@@ -873,6 +957,14 @@
             
                 <li data-name="gaia.layer.Tianditu#dispose" class="">
                     <a href="gaia.layer.Tianditu.html#dispose">dispose</a>
+                </li>
+            
+                <li data-name="gaia.layer.Tianditu#on" class="">
+                    <a href="gaia.layer.Tianditu.html#on">on</a>
+                </li>
+            
+                <li data-name="gaia.layer.Tianditu#un" class="">
+                    <a href="gaia.layer.Tianditu.html#un">un</a>
                 </li>
             
             </ul>
@@ -906,6 +998,14 @@
             
                 <li data-name="gaia.layer.Vector#dispose" class="">
                     <a href="gaia.layer.Vector.html#dispose">dispose</a>
+                </li>
+            
+                <li data-name="gaia.layer.Vector#on" class="">
+                    <a href="gaia.layer.Vector.html#on">on</a>
+                </li>
+            
+                <li data-name="gaia.layer.Vector#un" class="">
+                    <a href="gaia.layer.Vector.html#un">un</a>
                 </li>
             
             </ul>
@@ -1460,7 +1560,7 @@
         </h4>
         
         <div class="tag-source">
-            gaia/layer/layer.js, line 51
+            gaia/layer/layer.js, line 52
         </div>
         
         
@@ -1483,6 +1583,308 @@
     
 
     
+    
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<dt class="">
+    <div class="nameContainer inherited">
+        
+        <div class="anchor" id="on">
+        </div>
+        <h4 class="name">
+            on<span class="signature">(type, listener, opt_this)</span>
+            
+                <span class="inherited"><a href="gaia.Observable.html#on">inherited</a></span>
+            
+            
+
+        </h4>
+        
+        <div class="tag-source">
+            gaia/observable.js, line 14
+        </div>
+        
+        
+    </div>
+    
+</dt>
+<dd class="">
+
+    
+    <div class="description">
+        <p>注册监听事件</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr class="">
+            
+                <td class="name"><code>type</code></td>
+            
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            <td  class="description last">
+                
+                <p>需要监听的事件类型</p></td>
+        </tr>
+	
+	
+	
+        <tr class="">
+            
+                <td class="name"><code>listener</code></td>
+            
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            <td  class="description last">
+                
+                <p>事件触发执行函数</p></td>
+        </tr>
+	
+	
+	
+        <tr class="">
+            
+                <td class="name"><code>this</code></td>
+            
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">S</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            <td  class="description last">
+                
+                <p>callback中的this</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<dt class="">
+    <div class="nameContainer inherited">
+        
+        <div class="anchor" id="un">
+        </div>
+        <h4 class="name">
+            un<span class="signature">(type)</span>
+            
+                <span class="inherited"><a href="gaia.Observable.html#un">inherited</a></span>
+            
+            
+
+        </h4>
+        
+        <div class="tag-source">
+            gaia/observable.js, line 27
+        </div>
+        
+        
+    </div>
+    
+</dt>
+<dd class="">
+
+    
+    <div class="description">
+        <p>注销监听事件</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr class="">
+            
+                <td class="name"><code>type</code></td>
+            
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            <td  class="description last">
+                
+                <p>需要监听的事件类型</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
     
     
 
