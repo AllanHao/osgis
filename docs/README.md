@@ -1,0 +1,47 @@
+# OpenMap 
+
+[![Build Status](https://travis-ci.org/AllanHao/openmap.svg?branch=master)](https://travis-ci.org/AllanHao/openmap) 
+![GitHub last commit](https://img.shields.io/github/last-commit/AllanHao/openmap.svg)
+[![codebeat badge](https://codebeat.co/badges/35f2762d-2cb6-44a4-b029-cbaacfa72d5a)](https://codebeat.co/projects/github-com-allanhao-openmap-master)
+![GitHub](https://img.shields.io/github/license/AllanHao/openmap.svg)
+
+
+基于[OpenLayers](https://openlayers.org)的前端地图解决方案，以自定义图层为基础单元，构造自定义地图。
+
+API文档地址：[https://osgis.cn](https://osgis.cn)
+
+## 主要类介绍
+
+* gaia.MapManager
+
+  地图管理类，主要负责创建，查找，移除 gaia.MapControl对象
+
+* gaia.MapControl
+
+  自定义地图控件类，拥有属性ol.Map对象，拥有各个自定义图层gaia.Layer对象
+
+* gaia.layer.Layer
+
+  自定义图层基类
+
+* gaia.MapWinForm
+
+  地图窗体类，通过html和css构造地图窗体，拥有属性gaia.MapControl对象
+
+* gaia.CustomerMap
+
+  自定义客户端地图类，继承gaia.MapWinForm类，负责实现自定义图层加载逻辑，存在于入口js中
+
+## 主要类关系说明
+
+![](./src/gaia/img/openmap_UML.png)
+
+1. gaia.MapManager与gaia.MapControl 类似依赖关系，由gaia.MapManager管理gaia.MapControl,及新增，查找，移除gaia.MapControl对象
+
+2. gaia.MapControl关联gaia.Layer和ol.Map,拥有属性gaia.Layer对象和ol.Map对象
+
+   gaia.layer.Tianditu以及gaia.layer.Store等等自定义图层继承gaia.layer.Layer
+
+3. gaia.MapWinForm关联gaia.MapControl，拥有属性gaia.MapControl对象
+
+4. gaia.CustomerMap继承gaia.MapWinForm,负责实现自定义图层加载逻辑
